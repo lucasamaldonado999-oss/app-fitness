@@ -2068,7 +2068,7 @@
         // Function to load food database
         async function loadFoodDatabase() {
             try {
-                const response = await fetch('data/alimentos.json');
+                const response = await fetch('./data/alimentos.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
